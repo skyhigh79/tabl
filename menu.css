@@ -1,0 +1,140 @@
+ <style>
+
+        table {
+            width:90%;
+            border: 3px solid #000;
+            border-radius: 12px; 
+            border-collapse: separate; 
+            margin: 0 auto;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-family: Arial, sans-serif;
+    
+        }
+    
+        th, td {
+            border: 1px solid #6b192b;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #b9c1e2;
+        }
+    
+        .휴일 {
+            background-color: #ffcccc;
+        }
+    
+    .메인메뉴 {
+        position: relative;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(255, 0, 0);
+        padding: 10px;
+        z-index: 1;
+    }
+    
+    .메인메뉴::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.4;
+        z-index: 0;
+        display: block;
+    }
+    
+    .메인메뉴[data-menu="깐풍기"]::before {
+        background-image: url("https://i.ibb.co/fVq6120f/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="고추찜닭"]::before {
+        background-image: url("https://i.ibb.co/bRKpRJZK/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="치킨치즈크로켓"]::before {
+        background-image: url("https://i.ibb.co/Vcfc0bKP/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="버섯우불고기"]::before {
+        background-image: url("https://i.ibb.co/Y4GR9cX3/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="오리두루치기"]::before {
+        background-image: url("https://i.ibb.co/jZWBrz25/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="갈비양념불고기"]::before {
+        background-image: url("https://i.ibb.co/wFn9vtLy/image.jpg");
+    }
+    
+    .메인메뉴[data-menu="순살치킨청양매운맛소스"]::before {
+        background-image: url("https://i.ibb.co/mjpfnMZ/image.png");
+    }
+    
+        .근로자의날 {
+            background-image: url("https://i.ibb.co/Q304Zbxn/7de7973f5553583ca19bbe38041805af-res.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 80% center;
+            font: bold 4em 'Arial', sans-serif;
+            color: #395520;
+            vertical-align: top;
+    
+        }
+    
+    
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+    
+        .공지사항 {
+            font-size: 0.8em;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        /* desktop first */
+        @media (min-width: 1025px) {
+            table {
+                font-size: 1em;
+            }
+    
+            th, td {
+                padding: 10px;
+                font-size: 1.1em;
+            }
+        }
+        /* 태블릿 */
+        @media (max-width: 1024px) {
+            table {
+            font-size: 0.85em;
+            }
+    
+        th, td {
+            padding: 8px;
+            font-size: 0.85em;
+            }
+        }
+    
+        /* 모바일 */
+        @media (max-width: 768px) {
+            table {
+            font-size: 0.75em;
+            }
+    
+        th, td {
+            padding: 5px;
+            font-size: 0.75em;
+            }
+      }
+    
+        </style>
